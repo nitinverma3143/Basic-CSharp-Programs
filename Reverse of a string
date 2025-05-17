@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace HelloWorld
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			string str = "Akshay Sharma";
+			string reversedStr = "";
+		
+		// Without using In-built function
+		for(int i = a.Length-1;i>=0;i--)
+		{
+		  s+=a[i];
+		}
+		Console.Write(s);
+		 
+		 
+		 // With using inbuilt function / without using loop
+		  char[] chrArr = str.ToCharArray();
+		  Array.Reverse(chrArr);
+		  //reversedStr = String.Join("", chrArr);
+		  reversedStr = new String(chrArr);
+		  Console.Write(reversedStr);
+			
+		}
+	}
+}
