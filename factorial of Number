@@ -1,0 +1,24 @@
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Enter the Number :");
+        int a = Convert.ToInt32(Console.ReadLine());
+        int fact = 1;
+        if(a<0){
+            Console.WriteLine(a +" is a negative Number, factorial is not possible !!");
+        }
+        if(a==0){
+            Console.WriteLine("Factorial of Number is :" + fact);
+        }
+        if(a>0){
+        for(int i = 1; i<=a; i++){
+            fact= fact * i;
+        }
+        Console.WriteLine("Factorial of Number is :" + fact);
+        }
+    }
+}
